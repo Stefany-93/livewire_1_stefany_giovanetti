@@ -1,0 +1,19 @@
+:root {
+    --blu: #3B82F6;
+    --rosso: #EF4444;   
+    --bianco: #faf9f5;
+    --azzurro: #93C5FD;
+    --grigio: #374151;
+}
+
+.bg-bianco{
+    background-color: var(--bianco);
+}
+
+.bg-azzurro{
+    background-color: var(--azzurro);
+}
+
+body, a{
+    color: var(--grigio);
+}
