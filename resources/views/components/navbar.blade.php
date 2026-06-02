@@ -17,6 +17,12 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ciao {{\Illuminate\Support\Facades\Auth::user()->name }}
                     </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Esci</a>
+                            <form action="{{route('logout')}}" method="POST" style="display: none;" id="form-logout">@csrf</form>
+                        </li>
+                    </ul>
                     @else
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ciao
